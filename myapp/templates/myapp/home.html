@@ -36,7 +36,7 @@
                 <div class="row">
                     {% for candidate in candidates %}
                     <div class="col-sm-8">
-                        {{candidate.id}}:<a href="{% url 'candidate_view' candidate.id %}">{{candidate.name}}</a>
+                        <a href="{% url 'candidate_view' candidate.id %}">{{candidate.name}}</a>
                     </div>
                     <div class="col-sm-4">
                         <button>Edit</button>

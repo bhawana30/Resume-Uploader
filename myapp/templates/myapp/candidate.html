@@ -15,8 +15,8 @@
         <div class="row">
             <div class="col-sm-10 shadow p-5 offset-sm-1">
                 <h3 class="text-center"><u>Resume</u></h3>
-                <p class="float-end">Application No: {{candidate.id}}</p>
-                <img src="{{candidate.Resume.profile_image.url}}" alt="" class="img-fluid img-thumbnail float-end mt-2" width="150" height="150">
+                <!-- <p class="float-end">Application No: {{candidate.id}}</p> -->
+                <img src="{{candidate.profile_image.url}}" alt="" class="img-fluid img-thumbnail float-end mt-2" width="150" height="150">
                 <p>Name: {{candidate.name}}</p>
                 <p>Date of Birth: {{candidate.dob}}</p>
                 <p>Gender: {{candidate.gender}}</p>
@@ -26,7 +26,7 @@
                 <p>Mobile No: {{candidate.mobile}}</p>
                 <p>Email ID: {{candidate.email}}</p>
                 <p>Preferred Job Locations: {{candidate.job_city|remove_special:"[]'"}}</p>
-                <p>Attachment: <a href="{{candidate.Resume.my_file.url}}">Download File</a></p>
+                <p>Attachment: <a href="{{candidate.my_file.url}}">Download File</a></p>
                 <div class="text-center">
                     <a href="/" class="btn btn-danger text-center">Back to Home</a>
                 </div>
